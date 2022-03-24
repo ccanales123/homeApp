@@ -39,12 +39,27 @@ body {
 }
 
 .bx--content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 1900px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(325px, 1fr));
+  row-gap: 85px;
+  max-width: 1900px;
   margin: 20rem auto 0;
   padding: 56px 112px;
   color: $white;
   background-color: transparent;
+}
+
+@media (max-width: 900px) {
+  .bx--content {
+    grid-template-columns: repeat(2, minmax(325px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .bx--content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }

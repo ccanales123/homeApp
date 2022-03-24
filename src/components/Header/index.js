@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import {
     Settings20,
     FilterEdit20,
+    UserAvatar20
 } from '@carbon/icons-react';
 import {
     Header,
@@ -34,6 +35,9 @@ const HeaderComponent = () => {
                     onClick={toggleSwitch}
                 >
                     <FilterEdit20 />
+                </HeaderGlobalAction>
+                <HeaderGlobalAction aria-label="Profile">
+                    <UserAvatar20 />
                 </HeaderGlobalAction>
             </HeaderGlobalBar>
             <HeaderPanel
