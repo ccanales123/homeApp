@@ -1,0 +1,14 @@
+.orb-light {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    &.orb-light--ok {
+        background-color: #77af4b;
+    }
+    &.orb-light--warning {
+        background-color: #f0cf65;
+    }
+    &.orb-light--alert {
+        background-color: #da5555;
+    }
+}

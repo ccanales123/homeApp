@@ -1,0 +1,50 @@
+@import 'carbon-components/scss/globals/scss/styles.scss';
+@import './components/Header/header.scss';
+@import './components/Tower/tower.scss';
+@import './components/BreadCrumb/breadcrumb.scss';
+@import './components/TowerCard/tower-card.scss';
+@import './components/OrbLight/orb-light.scss';
+@import '@carbon/themes/scss/themes';
+
+
+/*----Change theme -----------*/
+@include carbon--theme($carbon--theme--g90);
+
+/*----- Colors Variables -----*/
+/* -- NEUTRAL COLORS -- */
+$black: #000;
+$white: #fff;
+$gray-100: #0a0a0a;
+$gray-90: #262626;
+$gray-80: #303030;
+$gray-70: #393939;
+$gray-60: #454545;
+$gray-50: #525252;
+$gray-40: #878787;
+$gray-20: #cfcfcf;
+$gray-10: #e0e0e0;
+$gray-5: #f4f4f4;    
+
+/* -- ORB LIGHT (TRAFFIC LIGHT) COLORS -- */
+$ok: #77af4b;
+$warning: #f0cf65;
+$alert: #da5555;
+
+
+/* -- UTILITY COLORS -- */
+$bg: #101010;
+
+body {
+  background-color: $bg;
+}
+
+.bx--content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1900px;
+  margin: 20rem auto 0;
+  padding: 56px 112px;
+  color: $white;
+  background-color: transparent;
+}

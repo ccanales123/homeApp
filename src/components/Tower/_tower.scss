@@ -1,0 +1,20 @@
+.tower-title {
+    background-color: $gray-90;
+    width: 325px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    padding: 16px 20px;
+}
+
+.tower-metrics {
+    padding: 16px 16px 26px 16px;
+    height: 211px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .tower-metrics-status {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
